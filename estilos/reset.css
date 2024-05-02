@@ -1,0 +1,49 @@
+/* (font-family: 'Press Start 2P', system-ui;) */@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* (font-family: 'Play', sans-serif;) */@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: inherit;
+    line-height: 1.4;
+    vertical-align: baseline;
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+}
+/* Normalização HTML */
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    scroll-behavior: smooth;/* Efeito de transição das seções */
+}
+body{
+    background-color: black;
+    font-family: 'Play', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* Remover estilos padrão de lista */
+ul, ol {
+    list-style: none;
+}
+
+/* Remover decoração de link padrão */
+a {
+    text-decoration: none;
+}
+
+/* Estilos padrão para elementos de formulário */
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+}
+
+/* Remover bordas e preenchimentos padrão em elementos de formulário */
+button,
+input {
+    overflow: visible;
+}

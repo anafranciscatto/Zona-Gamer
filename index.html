@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/reset.css">
+    <link rel="stylesheet" href="/estilos/variaveis.css">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <title>Park-Play</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="header-imagem">
+                <div class="header-topo">
+                    <div class="logo"><figure><img src="/estilos/img/logo - Park-Play/logo - vinho.png" alt="Logo"></figure></div>
+                    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                    <nav>
+                      <a href="#">Home</a>
+                      <a href="#">biblioteca</a>
+                      <a href="#">Comprar</a>
+                      <a href="#">Login</a>
+                    </nav>
+                </div>
+                <div class="header-baixo">
+                    <div class="container-txt">
+                        <p id="text">Desvende o universo dos jogos.</p>
+                        <p span="header-baixo__span-p"id="text">  Bem-vindo ao Park-Play.</p>
+                    </div>
+                    <script src="script.js"></script>
+                </div>
+            </div>
+        </header>
+
+        <section>
+           <div class="section-01">
+                <div class="background-image">
+                    <div class="form-container">
+                        <form class="styled-form">
+                            <h2>Login</h2>
+                            <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                            </div>
+                    
+                            <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            </div>
+                    
+                            <div class="form-group">
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="senha" required>
+                            </div>
+                    
+                            <div class="form-group">
+                            <input type="checkbox" id="lembrarSenha" name="lembrarSenha">
+                            <label for="lembrarSenha">Lembrar Senha</label>
+                            </div>
+                    
+                            <div class="form-group">
+                            <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+                            </div>
+                    
+                            <div class="form-group">
+                            <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+           </div> 
+        </section>
+
+        <section>
+            <div class="section-02">
+                <div class="section-2__h1-container">
+                      <h1>recomentados...</h1>
+                </div>
+                <div class="section-02__img-container">
+                    <div class="section-02-img-container__card">
+                       <img src="https://cdn.akamai.steamstatic.com/steam/apps/1144200/header.jpg?t=1705678438" alt="">
+                        <div class="section-02-img-container-card__conteudo">
+                            <h2>Ready or Not</h2>
+                                <p>O LSPD relata um intenso aumento de crimes violentos na região da grande Los Sueños. Equipes da SWAT foram despachadas para desarmar cenários de alto risco, incluindo situações com reféns, ameaças de bomba, suspeitos cercados e mais.</p>
+                                <a id="botaoComprar" href="https://store.steampowered.com/app/1144200/Ready_or_Not/" >Comprar</a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="section-02-img-container__card">
+                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/553850/header.jpg?t=1705597567" alt="">
+                        <div class="section-02-img-container-card__conteudo">
+                            <h2>Helldivers</h2>
+                                <p>é um jogo de tiro de controle duplo extremo e cooperativo, dos criadores de Magicka. Como parte da unidade de elite, chamada HELLDIVERS, os jogadores devem trabalhar em equipe para proteger a SUPER TERRA e derrotar os inimigos da humanidade em uma intensa guerra intergaláctica.</p>
+                                <a id="botaoComprar" href="https://store.steampowered.com/app/394510/HELLDIVERS_Dive_Harder_Edition/?l=portuguese">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="section-02-img-container__card">
+                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1665460/header.jpg?t=1706766938" alt="">
+                        <div class="section-02-img-container-card__conteudo">
+                            <h2>eFootball™ 2024</h2>
+                                <p>Construa o seu próprio time ideal
+                                    Além de FC Barcelona, Manchester United FC, FC Bayern München, AC Milan, Internazionale Milano e outros gigantes europeus, você também pode deixar seus times com os uniformes e os emblemas de seleções e de clubes da América do Sul, da J.League e do mundo todo!</p>
+                                <a id="botaoComprar" href="https://store.steampowered.com/app/1665460/eFootball_2024/">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="section-02-img-container__card">
+                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg?t=1695758729" alt="">
+                        <div class="section-02-img-container-card__conteudo">
+                            <h2>God of war</h2>
+                                <p>God of War é uma série de jogos eletrônicos de ação-aventura criada por David Jaffe da Santa Monica Studio, da Sony. Iniciada em 2005 no console PlayStation 2, tornou-se carro-chefe para a marca PlayStation, consistindo em nove jogos em várias plataformas.</p>
+                                <a id="botaoComprar" href="https://store.steampowered.com/app/1593500/God_of_War/">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="section-02-img-container__card">
+                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1888930/header.jpg?t=1705640438" alt="">
+                        <div class="section-02-img-container-card__conteudo">
+                            <h2>The Last off Us</h2>
+                                <p>Em uma civilização devastada, em que infectados e sobreviventes veteranos estão à solta, Joel, um protagonista abatido, é contratado para tirar uma garota de 14 anos, Ellie, de uma zona de quarentena militar. No entanto, o que começa como um pequeno serviço se transforma em uma jornada brutal através do país.</p>
+                                <a id="botaoComprar" href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="section-02-img-container__card">
+                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1259420/header.jpg?t=1698779323" alt="">
+                        <div class="section-02-img-container-card__conteudo">
+                            <h2>Days Gone</h2>
+                                <p>Entre na pele do antigo motociclista fora da lei Deacon St. John, um caçador de recompensas que tenta achar uma razão para viver numa terra cercada pela morte. Vasculhe assentamentos abandonados em busca de equipamentos.</p>
+                                <a id="botaoComprar" href="https://store.steampowered.com/app/1259420/Days_Gone/">Comprar</a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="sction-03">
+                <div class="section-03__fileira  section-03-cor-roxo">
+                    <figure>
+                        <img src="/estilos/img/PROJETOS - CAPAS/Senua’s Saga_ Hellblade II.png" alt="S.T.A.L.K.E.R. 2: Heart of Chornobyl">
+                    </figure>
+                    <div class="section-03-fileira__conteudo section-03-fileira-conteudo__direito">
+                        <h1>Senua’s Saga: Hellblade II</h1>
+                        <br>
+                        <h5>CONSOLE · PC · NUVEM</h5>
+                        <br>
+                        <p><span>A sequência do premiado Hellblade: Senua's Sacrifice, Senua retorna em uma jornada brutal de sobrevivência através da lenda e tormento da Islândia Viking. Para salvar aqueles que foram vítimas dos terrores da tirania, Senua enfrenta uma batalha de superação das trevas.</span></p>
+                        <br>
+                        <a href="https://www.xbox.com/pt-BR/games/senuas-saga-hellblade-II">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="section-03__fileira section-03-cor-amarelo">
+                    <div class="section-03-fileira__conteudo">
+                        <h1>S.T.A.L.K.E.R. 2: Heart of Chornobyl</h1>
+                        <br>
+                        <h5>CONSOLE · PC · NUVEM</h5>
+                        <br>
+                        <p><span>Boa caçada, stalker. A premiada franquia de PC amada por milhões de jogadores está fazendo uma verdadeira estreia no console de próxima geração com o S.T.A.L.K.E.R. 2: Heart of Chornobyl. Experimente uma mistura única de um jogo de tiro em primeira pessoa, simulador imersivo e terror.</span></p>
+                        <br>
+                        <a href="https://www.xbox.com/pt-BR/games/stalker-2">Saiba mais</a>
+                    </div>
+                    <figure>
+                        <img src="/estilos/img/PROJETOS - CAPAS/S.T.A.L.K.E.R. 2_ Heart of Chornobyl.png" alt="S.T.A.L.K.E.R. 2: Heart of Chornobyl">
+                    </figure>
+                </div>
+
+                <div class="section-03__fileira section-03-cor-vermelho">
+                    <figure>
+                        <img src="/estilos/img/PROJETOS - CAPAS/Ara_ History Untold.png" alt="S.T.A.L.K.E.R. 2: Heart of Chornobyl">
+                    </figure>
+                    <div class="section-03-fileira__conteudo  section-03-fileira-conteudo__direito">
+                        <h1>Ara: History Untold</h1>
+                        <br>
+                        <h5>PC</h5>
+                        <br>
+                        <p><span>Construa uma nação e lidere seu povo ao longo da história até os pináculos da realização humana, enquanto explora novas terras, desenvolve artes e cultura, conduz a diplomacia e enfrenta seus rivais para provar que você é o maior governante já conhecido. É o seu Mundo Agora</span></p>
+                        <br>
+                        <a href="https://www.xbox.com/pt-BR/games/ara-history-untold">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section-04 -->
+        <section>
+            <div class="section-04">
+                    <div class="card">
+                        <div class="inner">
+                            <img src="https://i.pinimg.com/564x/46/9a/11/469a1153f773e57c6abdda11c36a4008.jpg" alt="L.O.L" cl>
+                        </div>
+                        <img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" class="title">
+                    </div>
+    
+                    <div class="card">
+                        <div class="inner">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/3/34/Nova_capa_de_The_Sims_4.png" alt="the sims" cl>
+                        </div>
+                        <img src="https://cdn2.unrealengine.com/egs-thesims4-electronicarts-ic1-400x400-b8a3c66fbb00.png?h=270&quality=medium&resize=1&w=480" class="title">
+                    </div>
+    
+                    <div class="card">
+                        <div class="inner">
+                            <img src="data:image/jpeg;base64,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" alt="the sims" cl>
+                        </div>
+                        <img src="/estilos/img/logo - Park-Play/Logo valeorante.png" class="title">
+                    </div>
+                </div>
+                
+        </section>
+
+        <footer id="rodape">
+            <div id="conteudo-rodape">
+                <p>© 2024 Valve Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.</p>
+                <hr>
+                <p>IVA incluído em todos os preços onde aplicável.   Política de privacidade   |   Termos legais   |   Acordo de Subscrição Steam   |   Reembolsos   |   Cookies</p>
+                <p id="texto-animado"></p>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.biblioteca.com/" target="_blank">Biblioteca</a></li>
+                    <li><a href="https://www.tyter.com/" target="_blank">Tyter</a></li>
+                    <li><a href="https://www.cnpj.com/" target="_blank">CNPJ</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

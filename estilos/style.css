@@ -1,0 +1,719 @@
+/* (font-family: 'Press Start 2P', system-ui;) */@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* (font-family: 'Play', sans-serif;) */@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+.header-imagem{
+
+    width: 100%;
+    height: 60rem;
+    background: linear-gradient(rgba(17, 17, 17, 0.182),rgba(20,20,20,1)), url(https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+
+}
+.header-topo{
+
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Para garantir que o cabeçalho fique acima de outros elementos */
+
+}
+.logo img {
+
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 5rem;
+
+}
+
+nav {
+
+    display: flex;
+    gap: 20px;
+    padding-right: 5rem;
+    color: var(--cor-vinho);
+
+}
+
+a {
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+
+}
+.menu-icon {
+
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    
+    }
+    
+/* EFEITO ESCREVENDO */
+.container-txt {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+#text {
+    font-size: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid ;
+    color: #fff;
+    font-family: 'Press Start 2P', system-ui;
+    border-color: #fff;
+    -webkit-text-stroke: 3px var(--cor-vinho); /* Largura e cor do contorno para navegadores Webkit (Chrome, Safari) */
+    animation: neon-border 1s infinite; /* Adicionado animação para o efeito neon na borda */
+    animation: typing 8s steps(28) infinite;
+
+}
+
+/* Restante do CSS permanece inalterado */
+
+#text.start-animation {
+    animation: typing 5s steps(28) infinite;
+}
+
+#text.pause-animation {
+    animation: none; /* Pára a animação */
+    border-right: none; /* Remove a borda simulando a digitação */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* SECTION 01 */
+.section-01 {
+
+    position: relative;
+    height: 60rem;
+    background-image: url('https://images.pexels.com/photos/3930073/pexels-photo-3930073.jpeg'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+
+}
+
+.background-image {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para embaçar a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+
+}
+
+.form-container {
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+    color:var(--cor-amarela) ;
+}
+
+.styled-form {
+
+    background: rgba(255, 255, 255, 0.10); /* Fundo transparente */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+
+}
+
+.styled-form h2 {
+
+    text-align: center;
+    color: var(--cor-amarela);
+    font-size: 2.5rem;
+
+}
+
+.form-group {
+
+    margin-bottom: 15px;
+
+}
+
+label {
+
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+input {
+    color: var(--cor-amarela);
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border: 1px solid ;
+    border-radius: 5px;
+
+}
+input:hover{
+    
+    border-color: var(--cor-amarela);
+    border: 9rem;
+    color: var(--cor-amarela);
+
+}
+
+input[type="checkbox"] {
+
+    margin-right: 5px;
+
+}
+
+button {
+
+    background-color: var(--cor-amarela);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+button:hover {
+
+    background-color: var(--cor-amarela);
+
+}
+
+.esqueci-senha {
+
+    color: var(--cor-amarela);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+
+}
+
+.esqueci-senha:hover {
+
+    text-decoration: underline;
+
+}
+
+/* SECTION 02 */
+.section-02 {
+    background-color: var(--cor-preto);
+}
+
+.section-2__h1-container {
+    background: linear-gradient(to bottom, var(--cor-azul), var(--cor-preto));
+    padding: 1.5rem 0 0 0;
+}
+
+.section-02 h1 {
+    text-align: center;
+    color: var(--cor-preto);
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 2.7rem;
+    -webkit-text-stroke: 0.6px #fff; 
+}
+
+.section-02__img-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-02__img-container img {
+    width: 45%;
+    padding: 0.5rem;
+    transition: opacity 0.5s ease; /* Adiciona uma transição suave na opacidade */
+}
+
+.section-02-img-container__card {
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-02-img-container__card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra completamente a área, mantendo a proporção */
+    border-radius: 5px; /* Opcional: adiciona borda arredondada à imagem */
+}
+
+.section-02-img-container__card:hover img {
+    opacity: 0.5; /* Opacidade reduzida durante o hover */
+}
+
+.section-02-img-container-card__conteudo {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Adiciona transição suave na opacidade e transformação */
+}
+
+.section-02-img-container__card:hover .section-02-img-container-card__conteudo {
+    opacity: 1; /* Conteúdo fica visível durante o hover */
+    transform: translate(-50%, -50%) scale(1.1); /* Efeito de escala para aparecer de dentro para fora */
+}
+/* botão */
+#botaoComprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-azul); /* Cor do botão */
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3rem;
+    color: #fff;
+}
+
+#botaoComprar::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-roxo); /* Cor da "escrita" */
+    transition: left 0.5s ease; /* Transição suave para a animação */
+    color: #fff;
+}
+
+#botaoComprar:hover::before {
+    left: 0; /* Desloca a "escrita" para a direita ao passar o mouse */
+}
+
+#botaoComprar:hover {
+    color: #fff;; /* Muda a cor do texto ao passar o mouse */
+}
+
+/* SECTION-03 */
+.section-03-cor-roxo{
+    background-color: var(--cor-roxo);
+}
+.section-03-cor-amarelo{
+    background-color: var(--cor-amarela);
+}
+.section-03-cor-vermelho{
+    background-color: var(--cor-vinho);
+}
+
+.sction-03 {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: url(/estilos/img/Fundo__section-03.png);
+    background-position: center center;
+    background-size: auto 5%;
+    background-repeat: repeat-space; 
+
+}
+
+.section-03__fileira {
+
+    width: 100%;
+    display: flex;
+    height: auto; 
+    margin: 2rem 0 2rem 0;
+    align-items: center;
+
+}
+
+.section-03__fileira figure {
+
+    width: 60%;
+    height: 100%; 
+    overflow: hidden; 
+
+}
+img {
+
+    width: 100%;
+    height: auto;
+
+}
+.section-03-fileira__conteudo {
+
+    width: 40%;
+    height: 32rem;
+    color: #fff;
+    font-size: 1.4rem;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-radius: 1.5rem;
+
+}
+.section-03-fileira__conteudo h1{
+
+    font-size: 2.4rem;
+
+}
+.section-03-fileira__conteudo p span { /* Espaço antes da minha linha */
+
+    padding-left: 1rem;
+
+  }
+.section-03-fileira__conteudo h5{
+
+    padding: 0.4rem;
+    background-color: chartreuse;
+    margin-right: 50%;
+    border-radius: 2rem;
+    text-align: center;
+
+}
+.section-03-fileira-conteudo__direito {
+
+    margin: 0;
+    margin: 0 4rem 0 3rem;
+    
+}
+.section-03-fileira__conteudo a {/* botão saiba mais*/
+
+    position: relative;
+    text-decoration: none;
+
+}
+
+.section-03-fileira__conteudo a:after {
+
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: chartreuse; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+
+}
+
+.section-03-fileira__conteudo a:hover:after {
+
+    transform: scaleX(1);
+
+}
+
+/* ----------------------------------------------------------- */ 
+
+.section-04{
+    width: 100%;
+    height:auto;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.card{
+    width: 19.3%;
+    height: auto;
+    padding-bottom: 10rem;
+    position: relative;
+}
+.section-04 img{
+    width: 100%;
+    height: auto;
+}
+.title{
+    inset: 0;
+    position: absolute;
+    transform: translate3d(0%,70%,0);
+}
+
+.inner .section-04 img{
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.card:hover .inner{
+    transform: perspective(900px)translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(250, 250, 250, 0.75);
+    filter:blur(0.8px);
+}
+.card:hover .title{
+    transform: translate3d(0%,30%,0);
+}
+.inner,title{
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+/* FOOTER */
+/* ----------------------------------------------------------- */
+#rodape {
+    background-color: var(--cor-vinho);
+    color: #fff;
+    padding: 20px;
+}
+
+#conteudo-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px){
+    .container-txt{
+        overflow: hidden;
+    }
+    .section-03__fileira{
+        height: auto;
+        flex-direction: column;
+        
+    }
+    .section-03-fileira__conteudo{
+        width: 90%;
+        height: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    .section-03__fileira figure {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    }
+    html {
+        font-size: 48.5%; /* 1 rem será igual a 8px (12.5% de 16px) */
+    }
+    .section-02-img-container-card__conteudo {
+        font-size: 1.1rem;
+    }
+    #botaoComprar {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: var(--cor-azul); /* Cor do botão */
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        border-radius: 3rem;
+        color: #fff;
+    }
+    
+}
+@media only screen and (max-width:550px){
+
+    .section-04{
+        flex-direction: column;
+    }
+
+}
+/* ----------------------------------------------------- */
+
+@media only screen and (max-width: 500px) {
+    nav {
+
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+
+    }
+
+    nav a {
+
+        padding: 10px;
+        display: block;
+
+    }
+
+    nav.show {
+
+        display: flex;
+
+    }
+
+    .menu-icon {
+
+        display: block;
+    
+    }
+    #text{
+        font-size: 1.4rem;
+        -webkit-text-stroke: 1px var(--cor-vinho); /
+    }
+    }
+
+/* ----------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    #text{
+        font-size: 1.7rem;
+        -webkit-text-stroke: 1px var(--cor-vinho); /
+    }
+    #botaoComprar {
+        padding: 8px 16px; /* Ajuste o tamanho do botão para dispositivos menores */
+    }
+
+    #botaoComprar:hover {
+        padding: 10px 20px; /* Ajuste o tamanho do botão ao passar o mouse em dispositivos menores */
+    }
+
+    .form-container {
+        width: 80%;
+    }
+    .menu-icon{
+        margin-right: 3rem;
+    }
+
+}
+
+/* ----------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 80%;
+    }
+    .section-02__image-container img {
+        width: calc(50% - 10px); /* Duas imagens por linha em telas menores */
+    }
+    .section-02__img-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .section-02-img-container__card {
+        width: 90%;
+    }
+    .section-02-img-container-card__conteudo{
+        font-size: 1.3rem;
+    }
+    #text{
+        font-size: 2rem;
+        -webkit-text-stroke: 1px var(--cor-vinho); /
+    }
+    .section-02 h1{
+        font-size: 1.5rem;
+        -webkit-text-stroke: 0.2px #fff;
+    }
+}
+
+/* ----------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    #text{
+        font-size: 1.7rem;
+        -webkit-text-stroke: 1px var(--cor-vinho); /
+    }
+    #botaoComprar {
+        padding: 8px 16px; /* Ajuste o tamanho do botão para dispositivos menores */
+    }
+    #botaoComprar:hover {
+        padding: 10px 20px; /* Ajuste o tamanho do botão ao passar o mouse em dispositivos menores */
+    }
+
+    .form-container {
+        width: 80%;
+    }
+    .menu-icon{
+        margin-right: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    #text {
+        font-size: 16px;
+    }}
